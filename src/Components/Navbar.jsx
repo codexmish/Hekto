@@ -1,11 +1,39 @@
 import React from "react";
 import { BsCart2 } from "react-icons/bs";
-import { CiHeart } from "react-icons/ci";
+import { CiHeart, CiSearch } from "react-icons/ci";
 import { FiPhoneCall } from "react-icons/fi";
 import { GoPerson } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
+import { Link } from "react-router";
 
 const Navbar = () => {
+  const navMenu = [
+    {
+      navContent: "Home",
+      navLinks: "/",
+    },
+    {
+      navContent: "Pages",
+      navLinks: "/",
+    },
+    {
+      navContent: "Products",
+      navLinks: "/",
+    },
+    {
+      navContent: "Blog",
+      navLinks: "/",
+    },
+    {
+      navContent: "Shop",
+      navLinks: "/",
+    },
+    {
+      navContent: "Contact",
+      navLinks: "/",
+    },
+  ];
+
   return (
     <>
       <nav>
@@ -35,6 +63,32 @@ const Navbar = () => {
                 <div className="text-base text-whiteText font-semibold font-josefin">
                   <BsCart2 />
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mainNav py-5">
+          <div className="container">
+            <div className="item-row flex items-center justify-between">
+              <div className="logo">
+                <Link
+                  to={"/"}
+                  className="text-[34px] text-[#0D0E43] font-bold font-josefin"
+                >
+                  Hekto
+                </Link>
+              </div>
+              <div className="menu-items flex items-center gap-9">
+                {
+                  navMenu.map((item)=>(
+                    <Link to={item.navLinks} className="text-base text-[#0D0E43] font-normal font-lato hover:text-themePink">{item.navContent}</Link>
+                  ))
+                }
+              </div>
+              <div className="search w-[317px] h-10 border border-[#E7E6EF] flex items-center justify-between pl-5">
+                <input type="text" className="border-none outline-none"/>
+                <button className="h-10 w-10 bg-themePink flex items-center justify-center "><CiSearch className="text-2xl"/></button>
               </div>
             </div>
           </div>
