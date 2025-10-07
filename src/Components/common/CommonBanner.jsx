@@ -28,7 +28,7 @@ const CommonBanner = ({ image, bannerLight, textone, textTwo, textThree }) => {
                 </Link>
               </div>
             </div>
-            <div className="img-con py-10">
+            <div className="img-con py-10 w-[706px]">
               <img src={image} alt="bannerImage" />
             </div>
           </div>

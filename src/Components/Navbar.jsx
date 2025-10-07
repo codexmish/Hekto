@@ -42,25 +42,25 @@ const Navbar = () => {
           <div className="container">
             <div className="item flex items-center justify-between py-3">
               <div className="left-item flex items-center gap-12">
-                <div className="flex items-center gap-3 text-base text-whiteText font-semibold font-josefin">
+                <div className="flex items-center gap-3 text-base text-whiteText font-semibold font-josefin cursor-pointer">
                   <MdOutlineEmail />
                   examplw@gmail.com
                 </div>
-                <div className="flex items-center gap-3 text-base text-whiteText font-semibold font-josefin">
+                <div className="flex items-center gap-3 text-base text-whiteText font-semibold font-josefin cursor-pointer">
                   <FiPhoneCall />
                   (12345)67890
                 </div>
               </div>
               <div className="right-item flex items-center gap-4">
-                <div className="flex items-center gap-1 text-base text-whiteText font-semibold font-josefin">
+                <div className="flex items-center gap-1 text-base text-whiteText font-semibold font-josefin cursor-pointer">
                   Login
                   <GoPerson />
                 </div>
-                <div className="flex items-center gap-1 text-base text-whiteText font-semibold font-josefin">
+                <div className="flex items-center gap-1 text-base text-whiteText font-semibold font-josefin cursor-pointer">
                   Wishlist
                   <CiHeart />
                 </div>
-                <div className="text-base text-whiteText font-semibold font-josefin">
+                <div className="text-base text-whiteText font-semibold font-josefin cursor-pointer">
                   <BsCart2 />
                 </div>
               </div>
