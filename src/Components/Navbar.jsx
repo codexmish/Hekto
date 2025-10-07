@@ -80,15 +80,20 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="menu-items flex items-center gap-9">
-                {
-                  navMenu.map((item)=>(
-                    <Link to={item.navLinks} className="text-base text-[#0D0E43] font-normal font-lato hover:text-themePink">{item.navContent}</Link>
-                  ))
-                }
+                {navMenu.map((item) => (
+                  <Link
+                    to={item.navLinks}
+                    className="text-base text-[#0D0E43] font-normal font-lato hover:text-themePink"
+                  >
+                    {item.navContent}
+                  </Link>
+                ))}
               </div>
               <div className="search w-[317px] h-10 border border-[#E7E6EF] flex items-center justify-between pl-5">
-                <input type="text" className="border-none outline-none"/>
-                <button className="h-10 w-10 bg-themePink flex items-center justify-center "><CiSearch className="text-2xl"/></button>
+                <input type="text" className="border-none outline-none" />
+                <button className="h-10 w-10 bg-themePink flex items-center justify-center ">
+                  <CiSearch className="text-2xl" />
+                </button>
               </div>
             </div>
           </div>
