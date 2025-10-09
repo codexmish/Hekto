@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick.css";
 
 const Banner = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -22,7 +22,7 @@ const Banner = () => {
 
   return (
     <>
-      <section className="banner">
+      <section className="banner hidden">
         <Slider {...settings}>
           <div>
             <CommonBanner

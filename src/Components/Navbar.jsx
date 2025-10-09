@@ -38,7 +38,7 @@ const Navbar = () => {
     <>
       <nav>
         {/* ------------------top nav part--------- */}
-        <div className="topNav bg-purple h-11">
+        <div className="topNav bg-purple h-11 hidden lg:block">
           <div className="container">
             <div className="item flex items-center justify-between py-3">
               <div className="left-item flex items-center gap-12">
@@ -68,7 +68,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="mainNav py-5">
+        <div className="mainNav py-5 hidden lg:block">
           <div className="container">
             <div className="item-row flex items-center justify-between">
               <div className="logo">
