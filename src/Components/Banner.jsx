@@ -22,7 +22,7 @@ const Banner = () => {
 
   return (
     <>
-      <section className="banner pt-10">
+      <section className="banner pt-10 lg:pt-0">
         <Slider {...settings}>
           <div>
             <CommonBanner
