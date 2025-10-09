@@ -6,36 +6,34 @@ import { GoPerson } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router";
 
-
 export const navMenu = [
-    {
-      navContent: "Home",
-      navLinks: "/",
-    },
-    {
-      navContent: "Pages",
-      navLinks: "/",
-    },
-    {
-      navContent: "Products",
-      navLinks: "/",
-    },
-    {
-      navContent: "Blog",
-      navLinks: "/",
-    },
-    {
-      navContent: "Shop",
-      navLinks: "/",
-    },
-    {
-      navContent: "Contact",
-      navLinks: "/",
-    },
-  ];
+  {
+    navContent: "Home",
+    navLinks: "/",
+  },
+  {
+    navContent: "Pages",
+    navLinks: "/",
+  },
+  {
+    navContent: "Products",
+    navLinks: "/",
+  },
+  {
+    navContent: "Blog",
+    navLinks: "/",
+  },
+  {
+    navContent: "Shop",
+    navLinks: "/",
+  },
+  {
+    navContent: "Contact",
+    navLinks: "/",
+  },
+];
 
 const Navbar = () => {
-
   return (
     <>
       <nav>

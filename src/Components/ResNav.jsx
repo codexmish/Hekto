@@ -12,7 +12,6 @@ import { navMenu } from "./Navbar";
 const ResNav = () => {
   const [showResMenu, setShowResMenu] = useState(false);
 
-
   return (
     <>
       <nav className="topNav bg-purple h-11 lg:hidden">
