@@ -6,8 +6,8 @@ import { GoPerson } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router";
 
-const Navbar = () => {
-  const navMenu = [
+
+export const navMenu = [
     {
       navContent: "Home",
       navLinks: "/",
@@ -33,6 +33,8 @@ const Navbar = () => {
       navLinks: "/",
     },
   ];
+
+const Navbar = () => {
 
   return (
     <>

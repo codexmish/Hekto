@@ -7,36 +7,11 @@ import { GiTireIronCross } from "react-icons/gi";
 import { GoPerson } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router";
+import { navMenu } from "./Navbar";
 
 const ResNav = () => {
   const [showResMenu, setShowResMenu] = useState(false);
 
-  const navMenu = [
-    {
-      navContent: "Home",
-      navLinks: "/",
-    },
-    {
-      navContent: "Pages",
-      navLinks: "/",
-    },
-    {
-      navContent: "Products",
-      navLinks: "/",
-    },
-    {
-      navContent: "Blog",
-      navLinks: "/",
-    },
-    {
-      navContent: "Shop",
-      navLinks: "/",
-    },
-    {
-      navContent: "Contact",
-      navLinks: "/",
-    },
-  ];
 
   return (
     <>
@@ -104,7 +79,7 @@ const ResNav = () => {
                 {navMenu.map((item) => (
                   <Link
                     to={item.navLinks}
-                    className="text-base text-[#0D0E43] font-normal font-lato hover:text-themePink"
+                    className="text-base text-[#0D0E43] font-normal font-lato active:text-themePink"
                   >
                     {item.navContent}
                   </Link>
