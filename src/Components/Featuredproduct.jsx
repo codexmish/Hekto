@@ -1,15 +1,25 @@
-import React from 'react'
-import { CommonSectionHead } from './common/CommonSectionHead'
+import React from "react";
+import { CommonSectionHead } from "./common/CommonSectionHead";
+import CommonFeaturedProduct from "./common/CommonFeaturedProduct";
 
 const Featuredproduct = () => {
   return (
     <>
-    <section className='py-[129px]'>
-        <CommonSectionHead head={'Featured Products'}/>
-    </section>
-    
-    </>
-  )
-}
+      <section className="py-[129px]">
+        <div className="container">
+          <CommonSectionHead head={"Featured Products"} />
 
-export default Featuredproduct
+          <div className="mt-8">
+            <CommonFeaturedProduct
+              title={"Cantilever chair"}
+              code={"Code - Y523201"}
+              price={"$42.00"}
+            />
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Featuredproduct;
