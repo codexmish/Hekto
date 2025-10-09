@@ -14,7 +14,7 @@ const ResNav = () => {
 
   return (
     <>
-      <nav className="topNav bg-purple h-11 lg:hidden">
+      <nav className="topNav bg-purple h-11 lg:hidden relative z-10">
         <div className="container">
           <div className="item flex items-center justify-between py-3 px-3 lg:px-0">
             <div className="left-item flex items-center gap-6 lg:gap-12">
@@ -30,7 +30,7 @@ const ResNav = () => {
           </div>
         </div>
 
-        <div className="mainNav py-2">
+        <div className="mainNav py-2 bg-white">
           <div className="container">
             <div className="mab w-full h-10 flex items-center justify-between px-3">
               <div className="logo">
