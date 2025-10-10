@@ -19,21 +19,23 @@ const Featuredproduct = () => {
 
   return (
     <>
-      <section className="py-[129px]">
+      <section className="py-15 lg:py-[129px]">
         <div className="container">
           <CommonSectionHead head={"Featured Products"} />
 
-          <div className="mt-8 flex flex-wrap items-center justify-between">
+          <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-between px-3 lg:px-0">
 
             {
               featuredProduct?.slice(6,10).map((item, key)=>(
-                <CommonFeaturedProduct
-                  key={key}
-                  img={item.thumbnail}
-                  title={item.title}
-                  code={item.sku}
-                  price={item.price}
-                />
+                <div className="mt-5 lg:mt-0">
+                  <CommonFeaturedProduct
+                    key={key}
+                    img={item.thumbnail}
+                    title={item.title}
+                    code={item.sku}
+                    price={item.price}
+                  />
+                </div>
               ))
             }
           </div>
