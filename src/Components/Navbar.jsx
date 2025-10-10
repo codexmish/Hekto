@@ -80,8 +80,8 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="menu-items flex items-center gap-9">
-                {navMenu.map((item) => (
-                  <Link
+                {navMenu.map((item, id) => (
+                  <Link key={id}
                     to={item.navLinks}
                     className="text-base text-[#0D0E43] font-normal font-lato hover:text-themePink"
                   >
