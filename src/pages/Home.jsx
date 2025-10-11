@@ -3,6 +3,7 @@ import Banner from '../Components/Banner'
 import Featuredproduct from '../Components/Featuredproduct'
 import LatestProducts from '../Components/LatestProducts'
 import BeautyLatest from '../Components/BeautyLatest'
+import CommonSingleProduct from '../Components/common/CommonSingleProduct'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Banner/>
       <Featuredproduct/>
       <LatestProducts/>
+      <CommonSingleProduct/>
 
     </div>
     

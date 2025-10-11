@@ -4,24 +4,22 @@
   margin-inline: auto;
 }
 
-
-@theme{
+@theme {
   /* -------------Fonts----- */
 
   --font-lato: "Lato", sans-serif;
   --font-josefin: "Josefin Sans", sans-serif;
   --font-abyssinica: "Abyssinica SIL", serif;
 
-
   /* ------------Color------- */
 
-  --color-themePink: #FB2E86;
-  --color-themeRed: #FB2448;
-  --color-blueWeb: #2F1AC4;
-  --color-offneavy: #3F509E;
+  --color-themePink: #fb2e86;
+  --color-themeRed: #fb2448;
+  --color-blueWeb: #2f1ac4;
+  --color-offneavy: #3f509e;
   --color-navyBlue: #151875;
-  --color-pantone: #E0D3F5;
-  --color-purple: #7E33E0;
-  --color-offPurple: #9F63B5;
-  --color-whiteText: #F1F1F1;
+  --color-pantone: #e0d3f5;
+  --color-purple: #7e33e0;
+  --color-offPurple: #9f63b5;
+  --color-whiteText: #f1f1f1;
 }

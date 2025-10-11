@@ -26,10 +26,9 @@ const Featuredproduct = () => {
           <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-between px-3 lg:px-0">
 
             {
-              featuredProduct?.slice(6,10).map((item, key)=>(
-                <div className="mt-5 lg:mt-0">
+              featuredProduct?.slice(6,10).map((item)=>(
+                <div key={item.id} className="mt-5 lg:mt-0">
                   <CommonFeaturedProduct
-                    key={key}
                     img={item.thumbnail}
                     title={item.title}
                     code={item.meta.barcode}
