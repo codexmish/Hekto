@@ -32,7 +32,7 @@ const Featuredproduct = () => {
                     key={key}
                     img={item.thumbnail}
                     title={item.title}
-                    code={item.sku}
+                    code={item.meta.barcode}
                     price={item.price}
                   />
                 </div>

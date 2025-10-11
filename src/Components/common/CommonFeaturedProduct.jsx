@@ -13,7 +13,7 @@ const CommonFeaturedProduct = ({ img, title, code, price }) => {
             {title}
           </h2>
           <p className="text-navyBlue text-sm font-normal font-lato mb-2">
-            SKU: 
+            CODE- 
             {code}
           </p>
           <p className="text-navyBlue text-sm font-normal font-lato pb-4">{price}</p>
