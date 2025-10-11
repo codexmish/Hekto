@@ -12,7 +12,6 @@ const Home = () => {
       <Banner/>
       <Featuredproduct/>
       <LatestProducts/>
-      <CommonSingleProduct/>
 
     </div>
     
