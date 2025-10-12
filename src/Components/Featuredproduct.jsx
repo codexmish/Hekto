@@ -4,18 +4,14 @@ import CommonFeaturedProduct from "./common/CommonFeaturedProduct";
 import axios from "axios";
 
 const Featuredproduct = () => {
+  const [featuredProduct, setFeatureProduct] = useState();
 
-  const [featuredProduct, setFeatureProduct] = useState()
-  // console.log(featuredProduct)
-
-
-  useEffect(()=>{
-    axios.get("https://dummyjson.com/products")
-    .then((res)=>setFeatureProduct(res.data.products))
-    .catch((err)=>console.log(err))
-  },[])
-
-
+  useEffect(() => {
+    axios
+      .get("https://dummyjson.com/products")
+      .then((res) => setFeatureProduct(res.data.products))
+      .catch((err) => console.log(err));
+  }, []);
 
   return (
     <>
@@ -24,22 +20,17 @@ const Featuredproduct = () => {
           <CommonSectionHead head={"Featured Products"} />
 
           <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-between px-3 lg:px-0">
-
-            {
-              featuredProduct?.slice(6,10).map((item)=>(
-                <div key={item.id} className="mt-5 lg:mt-0">
-                  <CommonFeaturedProduct
-                    img={item.thumbnail}
-                    title={item.title}
-                    code={item.meta.barcode}
-                    price={item.price}
-                  />
-                </div>
-              ))
-            }
+            {featuredProduct?.slice(6, 10).map((item) => (
+              <div key={item.id} className="mt-5 lg:mt-0">
+                <CommonFeaturedProduct
+                  img={item.thumbnail}
+                  title={item.title}
+                  code={item.meta.barcode}
+                  price={item.price}
+                />
+              </div>
+            ))}
           </div>
-
-
         </div>
       </section>
     </>
