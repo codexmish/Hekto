@@ -15,7 +15,6 @@ const categories = [
 const LatestProducts = () => {
   const [activeCat, setActiveCat] = useState("Beauty");
 
-
   // Active component find
   const activeObj = categories.find((cat) => cat.name === activeCat);
   const ActiveComponent = activeObj.component;
@@ -32,8 +31,7 @@ const LatestProducts = () => {
               className={`cursor-pointer ${
                 activeCat === cat.name ? "text-themePink" : ""
               }`}
-              onClick={() => setActiveCat(cat.name)
-              }
+              onClick={() => setActiveCat(cat.name)}
             >
               {cat.name}
             </h2>
@@ -41,7 +39,7 @@ const LatestProducts = () => {
         </div>
 
         <div>
-          <ActiveComponent/>
+          <ActiveComponent />
         </div>
       </div>
     </>
