@@ -3,13 +3,9 @@ import CommonSingleProduct from "./common/CommonSingleProduct";
 import axios from "axios";
 
 const BeautyLatest = () => {
-    const [allProducts, setAllProducts] = useState([]);
-//   console.log(beautyProducts);
+  const [allProducts, setAllProducts] = useState([]);
 
-  let beautyProduct = allProducts.filter(
-    (item) => item.category == "beauty"
-);
-// console.log(beautyProduct)
+  let beautyProduct = allProducts.filter((item) => item.category == "beauty");
 
   useEffect(() => {
     axios
@@ -20,10 +16,10 @@ const BeautyLatest = () => {
 
   return (
     <>
-      <div className="mt-19 mb-10 flex flex-wrap items-center justify-center gap-x-9 gap-y-30">
+      <div className="mt-10 lg:mt-19 mb-10 flex flex-wrap items-center justify-center mx-4 gap-x-9 gap-y-12 lg:gap-y-30">
         {beautyProduct.map((item) => (
           <CommonSingleProduct
-          key={item.id}
+            key={item.id}
             img={item.thumbnail}
             title={item.title}
             orgPrice={item.price}
