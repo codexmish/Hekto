@@ -1,22 +1,20 @@
-import React from 'react'
-import Banner from '../Components/Banner'
-import Featuredproduct from '../Components/Featuredproduct'
-import LatestProducts from '../Components/LatestProducts'
-import BeautyLatest from '../Components/BeautyLatest'
-import CommonSingleProduct from '../Components/common/CommonSingleProduct'
+import React from "react";
+import Banner from "../Components/Banner";
+import Featuredproduct from "../Components/Featuredproduct";
+import LatestProducts from "../Components/LatestProducts";
+import Offers from "../Components/Offers";
 
 const Home = () => {
   return (
     <>
-    <div>
-      <Banner/>
-      <Featuredproduct/>
-      <LatestProducts/>
-
-    </div>
-    
+      <div>
+        <Banner />
+        <Featuredproduct />
+        <LatestProducts />
+        <Offers/>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

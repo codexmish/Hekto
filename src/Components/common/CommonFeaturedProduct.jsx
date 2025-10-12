@@ -21,7 +21,7 @@ const CommonFeaturedProduct = ({ img, title, code, price }) => {
           </div>
         </div>
 
-        <div className="pro-con w-full flex flex-col items-center bg-white group-hover:bg-navyBlue">
+        <div className="pro-con w-full flex flex-col items-center bg-white group-hover:bg-navyBlue duration-500">
           <h2 className="text-themePink group-hover:text-white text-[18px] font-bold font-lato mt-[15px] mb-7">
             {title}
           </h2>
