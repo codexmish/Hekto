@@ -3,6 +3,7 @@ import Banner from "../Components/Banner";
 import Featuredproduct from "../Components/Featuredproduct";
 import LatestProducts from "../Components/LatestProducts";
 import Offers from "../Components/Offers";
+import BottomBanner from "../Components/BottomBanner";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Featuredproduct />
         <LatestProducts />
         <Offers/>
+        <BottomBanner/>
       </div>
     </>
   );
