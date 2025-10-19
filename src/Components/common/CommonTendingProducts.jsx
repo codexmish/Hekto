@@ -1,6 +1,6 @@
 import React from "react";
 
-const CommonTendingProducts = (img) => {
+const CommonTendingProducts = (img, head, discountPrice, price) => {
   return (
     <>
       <div className="w-[270px] h-[350px] p-3">
@@ -10,8 +10,12 @@ const CommonTendingProducts = (img) => {
           </div>
         </div>
 
-        <div className="content">
-            <h2 className="text-base text-navyBlue font-bold font-lato">Cantilever chair</h2>
+        <div className="content mt-4">
+            <h2 className="text-base text-navyBlue font-bold font-lato">{head}</h2>
+            <div className="price flex items-center gap-3 mt-2">
+                <p className="text-sm text-navyBlue font-normal font-josefin">{discountPrice} </p>
+                <p className="text-xs text-gray-300 font-normal font-josefin">{price} </p>
+            </div>
         </div>
       </div>
     </>
